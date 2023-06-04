@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+    <!-- Card -->
+    <div class="card">
+
+    <!-- Form inputs -->
+    <div class="form-wrapper">
+
+        <div class="input-wrapper">
+            <label for="day" class="form-label">DAY</label>
+            <input type="text" placeholder="DD" class="form-input" id="day">
+        </div>
+
+        <div class="input-wrapper">
+            <label for="month" class="form-label">MONTH</label>
+            <input type="text" placeholder="MM" class="form-input" id="month">
+        </div>
+
+        <div class="input-wrapper">
+            <label for="year" class="form-label">YEAR</label>
+            <input type="text" placeholder="YYYY" class="form-input" id="Year">
+        </div>
+    <!-- Form wrapper end -->
+    </div>
+
+
+    <!-- Button -->
+    <div class="button-wrapper">
+
+        <hr class="button-line">
+
+        <!-- Submit button -->
+         <button class="submit-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+                <g fill="none" stroke="#FFF" stroke-width="2">
+                    <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+                </g>
+            </svg>
+        </button>
+    <!-- Button wrapper end -->
+    </div>
+
+
+    <!-- Results -->
+
+    <!-- Year -->
+    <div class="results-wrapper">
+        <div class="result">
+
+            <div id="year-result" class="calc-result">
+                --
+            </div> 
+            <div class="result-period">years</div>
+
+        </div>
+    </div>
+
+    <!-- Month -->
+    <div class="results-wrapper">
+        <div class="result">
+
+            <div id="month-result" class="calc-result">
+                --
+            </div>
+            <div class="result-period">months</div>
+
+        </div>
+    </div>
+        <!-- Day -->
+        <div class="results-wrapper">
+            <div class="result">
+    
+                <div id="day-result" class="calc-result">
+                    --
+                </div>
+                <div class="result-period">days</div>
+            
+            </div>
+        </div>
+
+    <!-- Card end -->
+    </div>
+
+
+    </div>
+
+
+
+
+    <script href="script.js"></script>
+</body>
+</html>
