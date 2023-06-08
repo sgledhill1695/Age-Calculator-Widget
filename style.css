@@ -34,22 +34,29 @@ body{
 
 .card{
     background-color: #FFFFFF;
-    padding: 56px;
     border: 2px solid #F0F0F0;
     border-radius: 24px 24px 200px 24px;
-    width: 740px
+    min-width: 840px;
+    margin: auto;
+}
+
+.card-wrapper{
+    max-width: 728px;
+    margin: 56px;
 }
 
 /* Form section */
 .form-wrapper{
     display: flex;
+    max-width: 100%;
     gap: 32px;
-    width: 728px;
 }
 .input-wrapper{
     display: flex;
     flex-direction: column;
-    gap:8px;
+    gap: 8px;
+    max-width: 160px;
+    height: 130px;
 }
 .form-label{
     font-family: poppins-bold;
@@ -62,6 +69,7 @@ body{
     text-transform: uppercase;
 }
 .form-input{
+    outline: none;
     box-sizing: border-box;
     padding: 12px 24px;
     gap: 16px;
@@ -75,16 +83,19 @@ body{
     font-weight: 700;
     letter-spacing: 0.01em;
     color: #151515;
-    opacity: 0.5;
+
+}
+.form-input:focus{
+    border: 1px solid #854DFF;
+    color: black;
 }
 
 /* Button section */
 .button-wrapper{
-    width: 96px;
     height: 96px;
     display: flex;
-    width: 728px;
     align-items: center;
+    max-width: 100%;
 }
 
 
@@ -95,11 +106,19 @@ body{
     border:none;
 }
 
+.mobile-button-line{
+    display: none;
+}
+
 .submit-button{
     background: #854DFF;
     border:none;
     padding: 30px;
     border-radius: 216px;
+}
+.submit-button:hover{
+    background-color: black;
+    cursor: pointer;
 }
 
 /* Results section */
@@ -110,12 +129,12 @@ body{
     display: flex;
 }
 .calc-result{
-    width: 138px;
+    max-width: 138px;
     height: 114px;
     font-family: poppins-bolditalic;
     font-style: italic;
     font-weight: 800;
-    font-size: 104px;
+    font-size: 6.5em;
     line-height: 110%;
     letter-spacing: 6px;
     color: #854DFF;
@@ -125,7 +144,7 @@ body{
     font-family: poppins-bolditalic;
     font-style: italic;
     font-weight: 800;
-    font-size: 104px;
+    font-size: 6.5em;
     line-height: 110%;
     /* or 114px */
     letter-spacing: -0.02em;
@@ -133,3 +152,68 @@ body{
     color: #151515;
 }
 
+/* Media Queries */
+@media only screen and (max-width: 800px) {
+    .card {
+        min-width: 90%;
+        max-width: 90%;
+        margin: 6%;
+    }
+    .form-wrapper {
+        min-width:100%;
+        gap:16px;
+        justify-content: space-evenly;
+    }
+    .form-input{
+        padding: 12px 16px;
+        width: 87.67px;
+        height: 54px;
+        font-size: 20px;
+    }
+    .input-wrapper{
+        align-content: center;
+
+    }
+    .button-wrapper{
+        min-width: 100%;
+        justify-content: center;
+    }
+    .submit-button{
+        padding: 15px;
+        border-radius: 216px;
+    }
+    .button-line{
+        width: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    .mobile-button-line{
+        display: flex;
+        background-color: #DCDCDC;
+        width: 50%;
+        height: 1px;
+        border: none;
+    }
+    .calc-result{
+        font-size: 11vw;
+    }
+    .result{
+
+        justify-content: start;
+    }
+    .result-period{
+        font-size: 11vw;
+    }
+
+
+}
+
+@media only screen and (max-width: 400px) {
+    .container{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+
+
+}
