@@ -20,17 +20,20 @@
         
                 <div class="input-wrapper">
                     <label for="day" class="form-label">DAY</label>
-                    <input type="text" placeholder="DD" class="form-input" id="day">
+                    <input id="day" id="form" type="text" placeholder="DD" class="form-input" >
+                    <div id="day-error"></div>
                 </div>
         
                 <div class="input-wrapper">
                     <label for="month" class="form-label">MONTH</label>
-                    <input type="text" placeholder="MM" class="form-input" id="month">
+                    <input id="month" type="text" placeholder="MM" class="form-input" >
+                    <div id="month-error"></div>
                 </div>
         
                 <div class="input-wrapper">
                     <label for="year" class="form-label">YEAR</label>
-                    <input type="text" placeholder="YYYY" class="form-input" id="Year">
+                    <input id="year" type="text" placeholder="YYYY" class="form-input" >
+                    <div id="year-error"></div>
                 </div>
             <!-- Form wrapper end -->
             </div>
@@ -40,9 +43,10 @@
             <div class="button-wrapper">
         
                 <hr class="button-line">
+
         
                 <!-- Submit button -->
-                 <button class="submit-button">
+                 <button  id="submit-button" class="submit-button">
                     <svg id="button-svg" xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
                         <g fill="none" stroke="#FFF" stroke-width="2">
                             <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
@@ -64,7 +68,8 @@
                     <div id="year-result" class="calc-result">
                         --
                     </div> 
-                    <div class="result-period">years</div>
+                    
+                    <div class="result-period"><span></span>years</div>
         
                 </div>
             </div>
@@ -98,9 +103,6 @@
     <!-- Container end -->
     </div>
 
-
-
-
-    <script href="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

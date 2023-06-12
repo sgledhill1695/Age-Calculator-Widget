@@ -19,6 +19,10 @@ body{
     font-family: poppins-bolditalic;
     src: url(fonts/Poppins-BoldItalic.ttf)
 }
+@font-face {
+    font-family: poppins-italic;
+    src: url(fonts/Poppins-Italic.ttf)
+}
 
 
 
@@ -90,6 +94,27 @@ body{
     color: black;
 }
 
+.input-error-border{
+    border: 1px solid #FF5959;
+}
+#day-error{
+    font-family: poppins-italic;
+    font-size: 14px;
+}
+#month-error {
+    font-family: poppins-italic;
+    font-size: 14px;
+}
+#year-error {
+    font-family: poppins-italic;
+    font-size: 14px;
+}
+
+.input-error{
+    color: #FF5959;
+}
+
+
 /* Button section */
 .button-wrapper{
     height: 96px;
@@ -129,7 +154,7 @@ body{
     display: flex;
 }
 .calc-result{
-    max-width: 138px;
+    /* width: 138px; */
     height: 114px;
     font-family: poppins-bolditalic;
     font-style: italic;
@@ -138,6 +163,7 @@ body{
     line-height: 110%;
     letter-spacing: 6px;
     color: #854DFF;
+    margin-right: 5%;
 }
 
 .result-period{
